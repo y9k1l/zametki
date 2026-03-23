@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+nav {
+    float: right;
+    margin-top: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background: #34495e;
+}
+
+main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 130px);
+}
+
+.auth-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-box button:hover {
+    background: #34495e;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn, .create-note-btn, .edit-about-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover, .create-note-btn:hover, .edit-about-btn:hover {
+    background: #2980b9;
+}
+
+.create-note-btn {
+    margin-bottom: 20px;
+}
+
+.guest-buttons {
+    margin-top: 20px;
+}
+
+.guest-buttons .btn {
+    margin-right: 10px;
+}
+
+.note-form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.note-form-box h3 {
+    margin-bottom: 15px;
+}
+
+.note-form-box input, .note-form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.form-buttons button {
+    padding: 8px 15px;
+    margin-right: 10px;
+}
+
+.note-card, .note-edit-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.note-card h3, .note-edit-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.note-card p, .note-edit-card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.note-card small, .note-edit-card small {
+    color: #999;
+    font-size: 12px;
+}
+
+.note-buttons, .edit-buttons {
+    margin-top: 10px;
+}
+
+.note-buttons button {
+    padding: 5px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-note-btn {
+    background: #3498db;
+    color: white;
+}
+
+.delete-note-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.save-edit-btn {
+    background: #27ae60;
+    color: white;
+    padding: 5px 12px;
+    margin-right: 10px;
+}
+
+.cancel-edit-btn {
+    background: #95a5a6;
+    color: white;
+    padding: 5px 12px;
+}
+
+.note-edit input, .note-edit textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    resize: none;
+}
+
+.about-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+#about-view p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none !important;
+}
+
+@media (max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+    
+    .container {
+        width: 95%;
+    }
+    
+    .auth-box {
+        margin: 0 10px;
+        padding: 20px;
+    }
+}
